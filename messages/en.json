@@ -1,0 +1,383 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "Firm Profile",
+    "practiceAreas": "Practice Areas",
+    "sectors": "Key Sectors",
+    "blog": "Legal Insights",
+    "contact": "Contact Us",
+    "careers": "Careers",
+    "resources": "Legal Resources"
+  },
+  "Common": {
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "contactUs": "Contact Us",
+    "bookConsultation": "Book a Consultation",
+    "exploreServices": "Explore Our Services",
+    "learnMore": "Learn More",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "established": "Est.",
+    "office": "Office"
+  },
+  "Footer": {
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "officeLocations": "Office Locations",
+    "allRightsReserved": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "trustedAdvisors": "Trusted Legal Advisors Across the United Arab Emirates Since 1989"
+  },
+  "Company": {
+    "name": "Hamdan Rashoud Al Zeyoudi Advocates & Legal Consultants L.L.C",
+    "heroTagline": "A Forefront UAE Legal Consultancy Since 1989",
+    "tagline": "Architecting robust, forward-thinking legal solutions calibrated for the modern era.",
+    "positioning": "Delivering distinguished legal counsel, strategic corporate advisory, and unparalleled litigation excellence across the United Arab Emirates and globally.",
+    "establishedYear": "1989"
+  },
+  "Offices": {
+    "dubai": {
+      "city": "Dubai",
+      "address": "Deira – Al Maktoum Street – B62 – SF2 – Office 204 – UAE"
+    },
+    "fujairah": {
+      "city": "Fujairah",
+      "address": "Opposite Dibba Police Headquarters Building – FF1 – Office 103"
+    }
+  },
+  "Home": {
+    "qualityTitle": "Excellence, Integrity & World-Class Counsel",
+    "qualityP1": "Our firm meticulously upholds the highest standards of legal practice, uniting profound ambition with an uncompromising pursuit of excellence. This rigor permeates our entire intellectual framework, ensuring premier strategic planning, dispute resolution, and corporate consulting.",
+    "qualityP2": "Drawing upon the formidable expertise cultivated over three decades, our seasoned advocates deploy swift, authoritative, and strategic measures to navigate the most intricate legal climates. When the stakes are at their absolute highest, our institutional strength shields yours.",
+    "practiceTitle": "Primary Practice Areas",
+    "practiceDesc": "Operating as a premier full-service legal institution, our specialized departments seamlessly collaborate across jurisdictions to deliver sophisticated, agile solutions tailored for corporate, commercial, and private clients.",
+    "viewAllAreas": "View All Practice Areas",
+    "ctaTitle": "Strategic Legal Representation",
+    "ctaDesc": "Engage our elite counsel today to architect solutions that relentlessly preserve your most vital interests.",
+    "ctaButton": "Engage Counsel",
+    "jurisdictionSignals": {
+      "uaeFederalCourts": "UAE Federal Courts",
+      "dubaiCourts": "Dubai Courts",
+      "adjd": "Abu Dhabi Judicial Department",
+      "arbitration": "Commercial Arbitration",
+      "crossBorder": "Cross-Border Advisory"
+    }
+  },
+  "About": {
+    "title": "Firm Profile",
+    "whoWeAre": "Who We Are",
+    "whoWeAreP1": "Established in 1989, our institution firmly stands as a premier, full-service legal organization within the United Arab Emirates, delivering bespoke legal frameworks and commanding representation across multiple leading jurisdictions and key sectors.",
+    "whoWeAreP2": "We act as primary legal counsel to an expansive roster of elite corporate entities extending through the industrial, commercial, technical, and financial markets, guided by leading domestic, regional, and international legal minds.",
+    "whoWeAreP3": "Through stringent strategic partnerships with global and MENA-region legal entities, our firm actively maintains cross-border authority, ensuring flawless continuity and superior legal infrastructure for our domestic and multinational clientele.",
+    "ourMission": "Institutional Mission",
+    "ourMissionDesc": "Placing empirical legal application on par with advanced academic insight, we recruit exclusively top-tier litigators and advisory talent possessing deep comprehension and expansive authority inside the complex UAE and GCC legal frameworks.",
+    "ourPrinciples": "Foundational Principles",
+    "ourPrinciplesDesc": "Advocacy is an independent, honorable profession standing shoulder-to-shoulder with the judiciary to enforce absolute justice. Our adherence to the rule of law guarantees robust protection of rights, securing institutional equity and personal liberties.",
+    "ourTeam": "Executive Leadership",
+    "ourTeamDesc": "Guiding over three decades of legal excellence, our proprietary partners intimately orchestrate elite task forces fiercely committed to protecting and advancing every critical dimension of our clients' legal mandates."
+  },
+  "PracticePage": {
+    "title": "Practice Areas",
+    "description": "With over thirty years of collective, specialized legal authority, our strategy is refined for one singular, immutable purpose: executing an unequivocal legal victory for our clients."
+  },
+  "SectorsPage": {
+    "title": "Key Sectors",
+    "description": "Leveraging profound industry insight, we tailor our legal strategies alongside granular commercial understanding to directly mitigate risk and empower strategic growth across diverse global markets."
+  },
+  "PracticeAreas": {
+    "arbitration": {
+      "title": "Arbitration",
+      "description": "Sophisticated representation handling complex alternative dispute resolutions seamlessly before domestic and international tribunals."
+    },
+    "banking-finance": {
+      "title": "Banking & Finance",
+      "description": "Strategic counsel servicing elite financial institutions, lenders, and key borrowers on complex cross-border financial architectures."
+    },
+    "capital-markets": {
+      "title": "Capital Markets",
+      "description": "Advisory excellence navigating equities, debt instrument formations, derivative regulations, and high-impact IPO restructuring."
+    },
+    "commercial-law": {
+      "title": "Commercial Law",
+      "description": "Commanding authoritative insight providing ironclad commercial agreements, rigorous regulatory adherence, and strategic joint-ventures."
+    },
+    "competition-law": {
+      "title": "Competition Law",
+      "description": "Ensuring rigorous adherence to antitrust regulations and delivering agile solutions across complex cross-border merger controls."
+    },
+    "construction-infrastructure": {
+      "title": "Construction & Infrastructure",
+      "description": "Profound legal guidance spanning the full maturity lifecycle of mega-projects, major procurement, and elite infrastructure disputes."
+    },
+    "corporate-mergers-acquisitions": {
+      "title": "Corporate & M&A",
+      "description": "Structuring powerful corporate reorganizations, mitigating complex acquisitions, and handling premium strategic corporate takeovers."
+    },
+    "corporate-services": {
+      "title": "Corporate Services",
+      "description": "Comprehensive institutional governance enforcing rigorous corporate structuring, executive board compliances, and agile operational administration."
+    },
+    "corporate-structuring": {
+      "title": "Corporate Structuring",
+      "description": "Elevating cross-border expansions through cutting-edge entity formulation, sophisticated governance, and foreign direct investment structuring."
+    },
+    "digital-data": {
+      "title": "Digital & Data",
+      "description": "Navigating rapidly evolving parameters in modern data privacy, profound cyber-security risks, and the legal constraints of emerging technologies."
+    },
+    "employment-incentives": {
+      "title": "Employment & Incentives",
+      "description": "Dynamic workforce advisory handling elite executive compensations, rigorous non-compete enforcement, and complex labor litigation."
+    },
+    "family-business": {
+      "title": "Family Business",
+      "description": "Preserving multi-generational legacies with precise succession frameworks, stringent estate oversight, and private wealth consolidations."
+    },
+    "financial-crime": {
+      "title": "Financial Crime",
+      "description": "Defending formidable institutions against complex anti-money laundering litigation, multi-jurisdictional sanctions, and critical corporate fraud."
+    },
+    "innovation-patents": {
+      "title": "Innovation & Patents",
+      "description": "Aggressive safeguarding of proprietary intellectual property through comprehensive patent registration, IP disputes, and robust technology licensing."
+    },
+    "insurance": {
+      "title": "Insurance",
+      "description": "Precision advising for top-tier underwriters, syndicates, and corporate policyholders on regulatory structuring and sophisticated insurance disputes."
+    },
+    "intellectual-property": {
+      "title": "Intellectual Property",
+      "description": "A holistic framework defending global brands from trademark infringements, enforcing strict copyright measures, and securing digital rights."
+    },
+    "international-litigation": {
+      "title": "International Litigation",
+      "description": "Fierce, unyielding representation navigating transcontinental legal disputes and executing highly complex multi-jurisdictional judgments."
+    },
+    "legislative-drafting": {
+      "title": "Legislative Drafting",
+      "description": "Authoring precise, forward-thinking legal acts, strict regulatory frameworks, and comprehensive structural codes for evolving governmental bodies."
+    },
+    "litigation": {
+      "title": "Litigation",
+      "description": "Our litigation vanguard executes aggressive, strategic courtroom advocacy across all tiers of the federal and local judicial hierarchies."
+    },
+    "mediation": {
+      "title": "Mediation",
+      "description": "Employing advanced, highly strategic negotiation disciplines to swiftly dissolve formidable business conflicts without rigorous litigation."
+    },
+    "private-client-services": {
+      "title": "Private Client Services",
+      "description": "An exclusive, highly discrete practice architecting complex global tax solutions, elite estate structuring, and wealth preservation for high-net-worth individuals."
+    },
+    "private-equity": {
+      "title": "Private Equity",
+      "description": "Delivering highly complex buyouts, elite venture capital integrations, and strategic exit structures for global investment syndicates."
+    },
+    "private-notary": {
+      "title": "Private Notary",
+      "description": "Expediting premium state-sanctioned notarizations guaranteeing rapid documentation authentication, contract enforcement, and commercial validations."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "End-to-end strategic advisory overseeing monumental energy transformations, heavy-scale utilities distribution, and key public-private partnerships."
+    },
+    "real-estate": {
+      "title": "Real Estate",
+      "description": "Commanding counsel guiding prime commercial property investments, monumental corporate leasing, and complex elite development structuring."
+    },
+    "regulatory": {
+      "title": "Regulatory",
+      "description": "Anticipating severe regulatory risks while providing corporate clients an institutional shield navigating heavy governmental compliance frameworks."
+    },
+    "shipping": {
+      "title": "Shipping",
+      "description": "Authoritative maritime legal counsel managing heavy carrier disputes, precise vessel financing, and international premium cargo litigation."
+    },
+    "aviation-logistics": {
+      "title": "Aviation & Logistics",
+      "description": "Specialized, rigorous frameworks encompassing vast carrier compliance, complex aircraft acquisitions, and premium multi-modal transit legislation."
+    },
+    "sustainable-business": {
+      "title": "Sustainable Business",
+      "description": "Integrating cutting-edge ESG governance parameters ensuring corporate operations satisfy modern global environmental and sustainability benchmarks."
+    },
+    "tax": {
+      "title": "Tax",
+      "description": "Elite corporate tax planning mitigating severe fiscal liabilities through stringent VAT compliance and sophisticated international tax structuring."
+    },
+    "turnaround-restructuring-insolvency": {
+      "title": "Restructuring & Insolvency",
+      "description": "Strategic, aggressive intervention saving distressed commercial entities through rigorous corporate salvage structures and complex financial reorganization."
+    }
+  },
+  "Sectors": {
+    "defense-security": {
+      "title": "Defense & Security",
+      "description": "Rigorous legal protocols guiding military intelligence procurement, elite arms compliance, and strategic national defense integrations."
+    },
+    "education": {
+      "title": "Education",
+      "description": "Governance mechanisms aligning prominent academic institutions with expansive federal labor boundaries and sophisticated global franchising systems."
+    },
+    "energy-resources": {
+      "title": "Energy & Resources",
+      "description": "Commanding oversight for monumental traditional energy grids alongside complex next-generation sustainable power projects."
+    },
+    "financial-services": {
+      "title": "Financial Services",
+      "description": "Bulletproof structural compliance for premiere global banks, complex investment funds, and vast sovereign wealth entities."
+    },
+    "healthcare-life-sciences": {
+      "title": "Healthcare & Life Sciences",
+      "description": "Specialized legal infrastructure serving advanced clinical trials, massive medical network mergers, and elite regulatory approvals."
+    },
+    "hotels-leisure": {
+      "title": "Hotels & Leisure",
+      "description": "Guiding expansive, luxury multi-national hotel developments, specialized gaming policies, and prime recreational asset leasing."
+    },
+    "real-estate-construction": {
+      "title": "Real Estate & Construction",
+      "description": "Comprehensive risk-management and elite development guidance transforming mega-scale architectural visions into secured, operational landmarks."
+    },
+    "retail-consumer": {
+      "title": "Retail & Consumer",
+      "description": "Global supply chain architecture delivering premium legal protection for high-value retail corporations amidst evolving international standards."
+    },
+    "sports-events-management": {
+      "title": "Sports & Events Management",
+      "description": "Ironclad representation spanning monumental global event venues, rigorous elite athlete contracting, and complex cross-border broadcasting rights."
+    },
+    "technology-media-telecommunications": {
+      "title": "Technology & Telecom",
+      "description": "Cutting-edge legal architectures managing heavy 5G deployments, sophisticated global media licensing, and advanced fintech platforms."
+    },
+    "transport-logistics": {
+      "title": "Transport & Logistics",
+      "description": "Strategic frameworks empowering unhindered multi-modal transport arteries, huge transit acquisitions, and dominant port infrastructure policies."
+    }
+  },
+  "Staff": {
+    "hamdan-al-zeyoudi": {
+      "name": "Hamdan Rashoud Al Zeyoudi",
+      "designation": "Founder & Chairman",
+      "bio": "Founding Chairman bringing a legacy of profound legal achievement."
+    },
+    "abdullah-al-zeyoudi": {
+      "name": "Abdullah Hamdan Al Zeyoudi",
+      "designation": "Managing Partner",
+      "bio": "Leading domestic and international corporate legal operations."
+    },
+    "mohamed-bu-jasim": {
+      "name": "Mohamed (Bu Jasim)",
+      "designation": "Head of Corporate Departments",
+      "bio": "Pioneering the commercial strategy divisions."
+    },
+    "al-munzir-hassan": {
+      "name": "Al Munzir Hassan",
+      "designation": "Senior Legal Counsel",
+      "bio": "Expert litigator navigating immense corporate disputes."
+    },
+    "ahmed-asim-mubarak": {
+      "name": "Ahmed Asim Mubarak",
+      "designation": "Senior Legal Counsel",
+      "bio": "Formidable counsel representing high-net-worth institutional clients."
+    },
+    "shaimaa-ragab": {
+      "name": "Shaimaa Ragab Hamza",
+      "designation": "Head of Administration",
+      "bio": "Commanding executive-level operations."
+    },
+    "faris-salih": {
+      "name": "Faris Salih",
+      "designation": "Legal Advisor",
+      "bio": "Providing specialized regulatory strategy."
+    },
+    "yara-khalid": {
+      "name": "Yara Khalid",
+      "designation": "Corporate Administrator",
+      "bio": "Managing top-tier client relations and logistics."
+    },
+    "daiane": {
+      "name": "Daiane",
+      "designation": "Corporate Administrator",
+      "bio": "Ensuring precision executive support."
+    },
+    "ashraf-asim": {
+      "name": "Ashraf Asim",
+      "designation": "Chief Financial Officer",
+      "bio": "Executing heavy-scale institutional financial architectures."
+    }
+  },
+  "Blogs": {
+    "if-you-have-a-case-why-consult-your-friend": {
+      "title": "If You Have a Case, Why Consult Your Friend?",
+      "excerpt": "Studies indicate significant risk exposure when individuals consult acquaintances over formal legal practitioners, inciting profound future operational detriments.",
+      "content": "Studies indicate significant risk exposure when individuals consult acquaintances over formal legal practitioners, inciting profound future operational and financial detriments.\n\nSuch actions frequently derive from fundamental misconceptions regarding specialized fee scopes, compounded by a lack of institutional transparency.\n\nOur firm systematically deconstructs these burdens by supplying an uncompromising, crystal-clear initial evaluation for elite commercial and personal representations.\n\nWe deliver preliminary, precision insight completely free of operational cost regarding:\n\n- Complex Commercial & Contractual Litigation\n- Rigorous Financial Structuring Disputes\n- Penal and Civil Federal Code\n- Elite Rental Arbitration\n\nCommand your future. Request an authoritative analysis seamlessly via our corporate channels today.",
+      "category": "Strategic Advisory"
+    },
+    "divorce": {
+      "title": "Corporate & Personal Wealth Separation (Divorce)",
+      "excerpt": "Navigating multi-jurisdictional family law with discretion, handling the rigorous legal restructuring of the familial estate and high net-worth succession limits.",
+      "content": "Divorce formally transitions integrated marital contracts into disparate legal entities requiring rigorous restructuring mechanisms fully adhered to within established federal laws and Islamic jurisprudence.\n\nWe provide discrete, commanding guidance surrounding:\n\n- Irrevocable Wealth Separation\n- Corporate Assets Division Strategy\n- Advanced Judicial Dissolutions\n- Strict Jurisprudential Adjudications\n\nSecuring your institutional standing demands an elite, uncompromising legal protective framework during family restructuring.",
+      "category": "Family Wealth Preservation"
+    },
+    "legal-consultation-why-is-it-important": {
+      "title": "The Strategic Imperative of Professional Legal Consultation",
+      "excerpt": "Pre-emptive action utilizing advanced corporate counsel forms the critical bedrock to fully insulate enterprise stability and private investments from hostile risks.",
+      "content": "Pre-emptive action utilizing advanced corporate counsel forms the critical bedrock to fully insulate enterprise stability and private investments from hostile risks.\n\nHesitation surrounding elite legal acquisitions often derives exclusively from misunderstood fee scales, heavily eclipsing the colossal penalties accompanying unprotected corporate litigation.\n\nHarnessing authoritative pre-emptive legal representation unconditionally preserves vast financial mechanisms, creating ironclad contractual environments and impenetrable, sustained operational agility.",
+      "category": "Corporate Defense"
+    }
+  },
+  "Careers": {
+    "title": "Join Our Team",
+    "careersTitle": "A Professional Environment",
+    "careersP1": "We furnish rigorous, authoritative legal intelligence in both English and Arabic, seamlessly mitigating monumental risks for multinational enterprise clients and high-net-worth individuals across the GCC.",
+    "careersP2": "Our overarching institutional aim is guaranteeing absolute client transparency regarding judicial vulnerabilities, strict legal ramifications, and advanced mitigation frameworks. We actively recruit formidable legal talent who mirror this uncompromising obsession with absolute precision, strict justice, and elite client preservation.",
+    "currentOpenings": "Current Openings",
+    "noOpenings": "We presently do not hold active vacancies within our immediate corporate structures. However, we perpetually evaluate outstanding, top-tier global legal talent for future strategic integrations.",
+    "submitCV": "Submit Credentials"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "subtitle": "Our clients are our most valued asset. We ensure unwavering privacy, tactical accuracy, and the absolute highest tier of legal service.",
+    "getInTouch": "Establish Contact",
+    "fullName": "Full Name",
+    "emailAddress": "Corporate Email",
+    "phoneNumber": "Direct Phone Number",
+    "serviceNeeded": "Service Requisition",
+    "generalInquiry": "General Corporate Inquiry",
+    "legalConsultation": "Strategic Legal Consultation",
+    "litigation": "Litigation Representation",
+    "corporateMA": "Corporate M&A / Due Diligence",
+    "message": "Detailed Memorandum",
+    "submitInquiry": "Transmit Inquiry",
+    "demoFormText": "* Demo Transmission: Execution succeeds visually but is securely discarded without persistence.",
+    "contactDetails": "Direct Institutional Contacts",
+    "phones": "Executive Phones",
+    "emails": "Secure Communication",
+    "ourOffices": "Regional Offices"
+  },
+  "Resources": {
+    "title": "Legal Resources",
+    "importantLinks": "Pivotal Governmental & Judicial Portals",
+    "links": {
+      "dubaiChamber": "Dubai Chamber of Commerce",
+      "abuDhabiJustice": "Judicial Department of Abu Dhabi",
+      "landDepartment": "Dubai Land Department",
+      "ministryInterior": "Ministry of Interior",
+      "rakCourts": "RAK Courts",
+      "ministryJustice": "Ministry of Justice",
+      "dubaiMunicipality": "Dubai Municipality",
+      "mohre": "Ministry of Human Resources and Emiratisation",
+      "dubaiCourts": "Dubai Courts",
+      "dubaiPolice": "Dubai Police Headquarters",
+      "dubaiLegalAffairs": "Government of Dubai Legal Affairs",
+      "publicProsecution": "Public Prosecution"
+    }
+  },
+  "BlogPage": {
+    "title": "Legal Insights & Intelligence"
+  }
+}
