@@ -18,9 +18,9 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   
   return (
     <div className="flex flex-col min-h-screen bg-background">
-      <section className="bg-primary-950 py-32 text-white relative bg-[url('/images/hero/homepage-hero-alt.png')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-primary-950/80 mix-blend-multiply"></div>
-        <div className="absolute inset-0 bg-primary-900/60 mix-blend-overlay"></div>
+      <section className="bg-primary-950 py-32 text-white relative bg-[url('/images/hero/homepage-hero.png')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-primary-950/30 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-primary-900/50 mix-blend-overlay"></div>
         <div className="container mx-auto px-4 lg:px-12 relative z-10 editorial-rhythm">
           <FadeIn className="max-w-3xl lg:ml-24 rtl:lg:mr-24 rtl:lg:ml-0">
             <span className="text-accent-400 font-bold tracking-widest uppercase mb-6 block text-sm border-l rtl:border-l-0 rtl:border-r border-accent-500 pl-4 rtl:pl-0 rtl:pr-4">INQUIRIES</span>
@@ -80,6 +80,20 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                      {tContact('demoFormText')}
                   </p>
                 </form>
+
+                {/* Desktop/Mobile Integrated Map */}
+                <div className="mt-16 w-full h-[350px] md:h-[450px] bg-primary-100 dark:bg-primary-900/20 border border-border overflow-hidden relative shadow-sm">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.335548674392!2d55.32021577776137!3d25.258522514379862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5dcded01667d%3A0x2aa280262c6a468f!2zSFJaIEFkdm9jYXRlcyAmIExlZ2FsIENvbnN1bHRhbnRzINit2YXYr9in2YYg2LHYtNmI2K8g2KfZhNiy2YrZiNiv2Yog2YTZhNmF2K3Yp9mF2KfYqSDZiNin2YTYp9iz2KrYtNin2LHYp9iqINin2YTZgtin2YbZiNmG2YrYqQ!5e1!3m2!1sen!2sae!4v1776768707601!5m2!1sen!2sae" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="absolute inset-0"
+                  ></iframe>
+                </div>
               </FadeIn>
             </div>
 

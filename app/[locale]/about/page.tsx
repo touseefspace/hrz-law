@@ -21,8 +21,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
     <div className="flex flex-col min-h-screen bg-background">
       {/* Editorial Page Header */}
       <section className="bg-primary-950 py-32 text-white relative bg-[url('/images/editorial/marble-surface-dark.png')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-primary-950/80 mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-primary-950/70 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-primary-950/30 mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-primary-950/50 mix-blend-multiply"></div>
         <div className="container mx-auto px-4 lg:px-12 relative z-10 editorial-rhythm">
           <FadeIn className="max-w-3xl lg:ml-24 rtl:lg:mr-24 rtl:lg:ml-0">
             <span className="text-accent-400 font-bold tracking-widest uppercase mb-6 block text-sm border-l rtl:border-l-0 rtl:border-r border-accent-500 pl-4 rtl:pl-0 rtl:pr-4">PROFILE</span>

@@ -8,7 +8,7 @@ export function Footer() {
   const tCompany = useTranslations('Company');
   const tOffices = useTranslations('Offices');
   const tCommon = useTranslations('Common');
-  
+
   const currentYear = new Date().getFullYear();
 
   return (
@@ -24,9 +24,9 @@ export function Footer() {
             {tCompany('positioning')}
           </p>
           <div className="pt-4 border-t border-primary-800/50 mt-6">
-             <span className="text-accent-400 text-sm font-medium leading-relaxed block max-w-sm">
-                {t('trustedAdvisors')}
-             </span>
+            <span className="text-accent-400 text-sm font-medium leading-relaxed block max-w-sm">
+              {t('trustedAdvisors')}
+            </span>
           </div>
         </div>
 
@@ -70,7 +70,7 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      
+
       <div className="container mx-auto px-4 mt-12 pt-8 border-t border-primary-800 text-sm text-primary-400 flex flex-col md:flex-row justify-between items-center text-center md:text-start gap-4">
         <p>&copy; {currentYear} {tCompany('name')}. {t('allRightsReserved')}</p>
         <div className="space-x-4">

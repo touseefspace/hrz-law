@@ -19,8 +19,8 @@ export default async function PracticeAreasPage({ params }: { params: Promise<{ 
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <section className="bg-primary-950 py-32 text-white relative bg-[url('/images/editorial/legal-document-texture.png')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-primary-950/80 mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-primary-950/70 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-primary-950/30 mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-primary-950/50 mix-blend-multiply"></div>
         <div className="container mx-auto px-4 lg:px-12 relative z-10 editorial-rhythm">
           <FadeIn className="max-w-3xl lg:ml-24 rtl:lg:mr-24 rtl:lg:ml-0">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 leading-tight">

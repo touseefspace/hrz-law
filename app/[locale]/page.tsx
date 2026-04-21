@@ -2,6 +2,31 @@ import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { practiceAreas } from '@/data/practiceAreas';
 import { FadeIn } from '@/components/fade-in';
+import {
+  Shield,
+  Landmark,
+  Building2,
+  Scale,
+  Globe,
+  ArrowRight,
+  ArrowLeft,
+  Briefcase,
+  TrendingUp,
+  FileText
+} from 'lucide-react';
+
+const getPracticeIcon = (id: string, className: string) => {
+  switch (id) {
+    case 'arbitration': return <Scale className={className} />;
+    case 'banking-finance': return <Landmark className={className} />;
+    case 'capital-markets': return <TrendingUp className={className} />;
+    case 'commercial-law': return <Briefcase className={className} />;
+    case 'competition-law': return <Shield className={className} />;
+    default: return <FileText className={className} />;
+  }
+};
+
+import { HeroSlideshow } from '@/components/hero-slideshow';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -17,13 +42,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const tHome = await getTranslations({ locale, namespace: 'Home' });
   const tCommon = await getTranslations({ locale, namespace: 'Common' });
   const tPractice = await getTranslations({ locale, namespace: 'PracticeAreas' });
-  
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-primary-950 text-white pt-48 pb-32 overflow-hidden flex flex-col justify-center bg-[url('/images/hero/homepage-hero.png')] bg-cover bg-center">
-        <div className="absolute inset-0 z-0 bg-primary-950/70 mix-blend-multiply"></div>
-        <div className="absolute inset-0 z-0 bg-primary-900/90 mix-blend-overlay"></div>
+      <section className="relative bg-primary-950 text-white py-10 overflow-hidden flex flex-col justify-center">
+        <HeroSlideshow />
+        
         <div className="container mx-auto px-4 lg:px-12 relative z-10 editorial-rhythm">
           <FadeIn className="max-w-4xl lg:ml-24 rtl:lg:mr-24 rtl:lg:ml-0">
             <span className="text-accent-400 font-bold tracking-widest uppercase mb-8 block text-sm border-l-2 rtl:border-l-0 rtl:border-r-2 border-accent-500 pl-4 rtl:pl-0 rtl:pr-4">
@@ -42,51 +67,75 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
       </section>
 
-      {/* Jurisdiction Signals */}
-      <section className="bg-primary-900 text-primary-200 py-6 border-y border-white/10">
-        <div className="container mx-auto px-4 lg:px-12">
-           <FadeIn className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-xs font-medium tracking-widest uppercase">
+      {/* Jurisdiction Signals - Scrolling Ticker */}
+      <section className="bg-primary-900 text-primary-200 py-4 border-y border-white/10 overflow-hidden relative">
+        <style dangerouslySetInnerHTML={{__html: `
+          @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          @keyframes tickerRTL {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(50%); }
+          }
+          .animate-ticker {
+            display: flex;
+            width: max-content;
+            animation: ticker 60s linear infinite;
+          }
+          [dir="rtl"] .animate-ticker {
+            animation-name: tickerRTL;
+          }
+          .animate-ticker:hover {
+            animation-play-state: paused;
+          }
+        `}} />
+        
+        {/* Faded Edges for Premium Look */}
+        <div className="absolute inset-y-0 left-0 w-24 bg-linear-to-r from-primary-900 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-y-0 right-0 w-24 bg-linear-to-l from-primary-900 to-transparent z-10 pointer-events-none"></div>
+
+        <div className="animate-ticker text-xs font-medium tracking-[0.2em] uppercase items-center group">
+          {[...Array(4)].map((_, i) => (
+            <div key={i} className="flex items-center gap-x-12 px-6">
               <span>{tHome('jurisdictionSignals.uaeFederalCourts')}</span>
-              <span className="text-accent-500">•</span>
+              <span className="text-accent-500 text-lg">•</span>
               <span>{tHome('jurisdictionSignals.dubaiCourts')}</span>
-              <span className="text-accent-500">•</span>
+              <span className="text-accent-500 text-lg">•</span>
               <span>{tHome('jurisdictionSignals.adjd')}</span>
-              <span className="text-accent-500">•</span>
+              <span className="text-accent-500 text-lg">•</span>
               <span>{tHome('jurisdictionSignals.arbitration')}</span>
-              <span className="text-accent-500">•</span>
+              <span className="text-accent-500 text-lg">•</span>
               <span>{tHome('jurisdictionSignals.crossBorder')}</span>
-           </FadeIn>
+              <span className="text-accent-500 text-lg">•</span>
+            </div>
+          ))}
         </div>
       </section>
 
       {/* Intro / Legal Narrative Segment */}
-      <section className="py-32 bg-background">
-        <div className="container mx-auto px-4 lg:px-12">
-          <FadeIn className="max-w-4xl lg:ml-32 rtl:lg:mr-32 rtl:lg:ml-0 editorial-rhythm">
+      <section className="py-16 md:py-24 lg:py-32 bg-background relative z-0 overflow-hidden">
+        <div className="container mx-auto px-4 lg:px-12 relative z-10">
+          <FadeIn className="max-w-4xl md:ml-16 lg:ml-32 rtl:md:mr-16 rtl:lg:mr-32 rtl:lg:ml-0 editorial-rhythm">
             <h2 className="text-4xl md:text-5xl font-bold text-primary-900 dark:text-white tracking-tight leading-tight">
               {tHome('qualityTitle')}
             </h2>
             <div className="double-divider"></div>
             <div className="text-foreground/80 text-xl leading-loose max-w-3xl">
               <p>{tHome('qualityP1')}</p>
-              <br/>
+              <br />
               <p>{tHome('qualityP2')}</p>
-            </div>
-            <div className="mt-16 border-l border-border pl-8 rtl:pl-0 rtl:border-l-0 rtl:border-r rtl:pr-8 py-10 relative overflow-hidden">
-               <div className="absolute inset-0 bg-[url('/images/editorial/legal-document-texture.png')] bg-cover opacity-10 mix-blend-multiply z-0 pointer-events-none"></div>
-               <span className="relative z-10 block font-serif text-3xl font-bold text-primary-900 dark:text-white mb-2">{tCompany('establishedYear')}</span>
-               <span className="relative z-10 text-accent-600 font-bold uppercase tracking-widest text-sm">Over Three Decades of Advisory Excellence</span>
             </div>
           </FadeIn>
         </div>
       </section>
 
       {/* Practice Areas / Capability Editorial */}
-      <section className="py-32 bg-primary-50 dark:bg-primary-950 border-t border-border">
+      < section className="py-16 md:py-24 lg:py-32 bg-primary-50 dark:bg-primary-950 border-t border-border" >
         <div className="container mx-auto px-4 lg:px-12">
-          <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 relative">
-            <div className="lg:w-[320px] shrink-0 top-32">
-              <FadeIn className="sticky top-32 editorial-rhythm">
+          <div className="flex flex-col lg:flex-row gap-8 md:gap-16 lg:gap-24 relative">
+            <div className="lg:w-[320px] shrink-0 lg:top-32 lg:relative">
+              <FadeIn className="lg:sticky lg:top-32 editorial-rhythm">
                 <span className="text-accent-600 font-bold tracking-widest uppercase mb-4 block text-sm border-l border-accent-500 pl-4 rtl:pl-0 rtl:pr-4 rtl:border-l-0 rtl:border-r">LEGAL DEPTH</span>
                 <h2 className="text-4xl font-bold text-primary-900 dark:text-white leading-tight">
                   {tHome('practiceTitle')}
@@ -104,10 +153,31 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <div className="lg:max-w-3xl flex-1">
               <div className="space-y-12">
                 {practiceAreas.slice(0, 5).map((area, index) => (
-                  <FadeIn key={area.id} delay={index * 0.1}>
-                    <div className="group border-b border-border pb-12 hover:border-accent-500 transition-colors">
-                      <h3 className="text-3xl font-bold mb-6 text-primary-900 dark:text-white group-hover:text-accent-600 transition-colors font-serif">{tPractice(`${area.id}.title`)}</h3>
-                      <p className="text-foreground/80 text-lg leading-relaxed">{tPractice(`${area.id}.description`)}</p>
+                  <FadeIn key={area.id}>
+                    <div className="group border-b border-border pb-10 hover:border-accent-500 transition-colors cursor-pointer relative">
+                      <div className="flex items-start gap-6">
+                        <div className="mt-1 transform group-hover:scale-110 transition-transform duration-500 text-accent-500">
+                          {getPracticeIcon(area.id, "w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity")}
+                        </div>
+
+                        <div className="flex-1 transform group-hover:translate-x-2 rtl:group-hover:-translate-x-2 transition-transform duration-500 ease-out">
+                          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-primary-900 dark:text-white group-hover:text-accent-600 transition-colors font-serif flex items-center justify-between gap-4">
+                            <span>{tPractice(`${area.id}.title`)}</span>
+
+                            <span className="shrink-0 flex items-center justify-center w-6 h-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-accent-500">
+                              {locale === 'ar' ? (
+                                <ArrowLeft className="w-6 h-6" />
+                              ) : (
+                                <ArrowRight className="w-6 h-6" />
+                              )}
+                            </span>
+                          </h3>
+
+                          <p className="text-foreground/80 text-lg leading-relaxed">
+                            {tPractice(`${area.id}.description`)}
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </FadeIn>
                 ))}
@@ -115,10 +185,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* CTA Section */}
-      <section className="py-32 bg-primary-950 text-white relative">
+      < section className="py-16 md:py-24 lg:py-32 bg-primary-950 text-white relative" >
         <div className="container mx-auto px-4 lg:px-12">
           <FadeIn className="max-w-4xl lg:mx-auto text-center editorial-rhythm">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 font-serif leading-tight">
@@ -133,7 +203,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </Link>
           </FadeIn>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 }
