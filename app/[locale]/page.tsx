@@ -27,7 +27,7 @@ const getPracticeIcon = (id: string, className: string) => {
 };
 
 import { HeroSlideshow } from '@/components/hero-slideshow';
-
+import { PracticeAreasGrid } from '@/components/practice-areas-grid';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Company' });
@@ -134,7 +134,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       < section className="py-16 md:py-24 lg:py-32 bg-primary-50 dark:bg-primary-950 border-t border-border" >
         <div className="container mx-auto px-4 lg:px-12">
           <div className="flex flex-col lg:flex-row gap-8 md:gap-16 lg:gap-24 relative">
-            <div className="lg:w-[320px] shrink-0 lg:top-32 lg:relative">
+            <div className="lg:w-[320px] shrink-0">
               <FadeIn className="lg:sticky lg:top-32 editorial-rhythm">
                 <span className="text-accent-600 font-bold tracking-widest uppercase mb-4 block text-sm border-l border-accent-500 pl-4 rtl:pl-0 rtl:pr-4 rtl:border-l-0 rtl:border-r">LEGAL DEPTH</span>
                 <h2 className="text-4xl font-bold text-primary-900 dark:text-white leading-tight">
@@ -151,37 +151,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </div>
 
             <div className="lg:max-w-3xl flex-1">
-              <div className="space-y-12">
-                {practiceAreas.slice(0, 5).map((area, index) => (
-                  <FadeIn key={area.id}>
-                    <div className="group border-b border-border pb-10 hover:border-accent-500 transition-colors cursor-pointer relative">
-                      <div className="flex items-start gap-6">
-                        <div className="mt-1 transform group-hover:scale-110 transition-transform duration-500 text-accent-500">
-                          {getPracticeIcon(area.id, "w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity")}
-                        </div>
-
-                        <div className="flex-1 transform group-hover:translate-x-2 rtl:group-hover:-translate-x-2 transition-transform duration-500 ease-out">
-                          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-primary-900 dark:text-white group-hover:text-accent-600 transition-colors font-serif flex items-center justify-between gap-4">
-                            <span>{tPractice(`${area.id}.title`)}</span>
-
-                            <span className="shrink-0 flex items-center justify-center w-6 h-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-accent-500">
-                              {locale === 'ar' ? (
-                                <ArrowLeft className="w-6 h-6" />
-                              ) : (
-                                <ArrowRight className="w-6 h-6" />
-                              )}
-                            </span>
-                          </h3>
-
-                          <p className="text-foreground/80 text-lg leading-relaxed">
-                            {tPractice(`${area.id}.description`)}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </FadeIn>
-                ))}
-              </div>
+              <PracticeAreasGrid areas={practiceAreas.slice(0, 6)} />
             </div>
           </div>
         </div>

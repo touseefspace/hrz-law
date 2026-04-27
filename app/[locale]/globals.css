@@ -81,6 +81,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* RTL Support utility overrides if needed */
+html[dir="rtl"] {
+  font-size: 112.5%; /* Scales base size to 18px for better Arabic readability */
+}
+
 [dir="rtl"] {
   text-align: right;
 }
